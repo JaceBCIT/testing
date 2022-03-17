@@ -1,0 +1,30 @@
+body {
+    background-color: #F2E9E1;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu {
+    width: 150px;
+}
+
+.menu_ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    list-style: None;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: None;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    color: #3e8fb0;
+}
+
