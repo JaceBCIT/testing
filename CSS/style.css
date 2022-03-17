@@ -41,7 +41,7 @@ a {
 .side_menu_close {
     background-color: #fffaf3;
     border: None;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     color: #3e8fb0;
     text-align: right;
@@ -84,7 +84,7 @@ aside {
     flex-direction: column;
     height: 100%;
     width: 220px;
-    position: absolute;
+    position: fixed;
     padding-top: 15px;
     padding-right: 15px;
 }
@@ -129,5 +129,43 @@ div {
     font-size: 15px;
 }
 
+@media screen and (max-width: 480px) {
+   .note {
+       padding-left: 150px;
+   }
 
+    aside {
+        width: 30%;
+    }
+
+    ul {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 200px;
+        height: 200px;
+    }
+
+    .text_button, a, h1, li, ::placeholder {
+        font-size: 12px;
+    }
+
+    div {
+        margin-left: 150px;
+    }
+
+    footer {
+        font-size: 10px;
+        text-align: right;
+    }
+
+    .add_note {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
 
