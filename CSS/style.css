@@ -131,22 +131,20 @@ div {
 
 @media screen and (max-width: 480px) {
    .note {
-       padding-left: 150px;
+       padding-left: 50px;
    }
 
     aside {
-        width: 30%;
+        width: 10%;
+        background-color: #F2E9E1;
     }
 
-    ul {
-        width: 100px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    .menu_ul {
+        width: 90px;
     }
 
     textarea {
-        width: 200px;
+        width: 250px;
         height: 200px;
     }
 
@@ -155,7 +153,7 @@ div {
     }
 
     div {
-        margin-left: 150px;
+        margin-left: 190px;
     }
 
     footer {
@@ -167,5 +165,35 @@ div {
         padding: 12px;
         font-size: 15px;
     }
+
+    .hidden, h1 {
+        visibility: hidden;
+        display: None;
+    }
+
+    .side_menu_close:hover + h1 {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        padding-left: 42px;
+    }
+
+    .side_menu_close:hover + h1 + .hidden{
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side_menu_close {
+        background-color: #F2E9E1;
+        visibility: hidden;
+    }
+
+    .side_menu_close:after {
+        visibility: visible;
+        content: ">>";
+    }
+
+
 }
 
